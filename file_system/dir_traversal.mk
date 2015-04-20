@@ -1,9 +1,9 @@
 CC=gcc
 CFLAGS=-c -Wall
 LDFLAGS=
-SOURCES=path_alloc_test.c path_alloc.c myerr.c
+SOURCES=dir_traversal.c path_alloc.c myerr.c
 OBJECTS=$(SOURCES:.c=.o)
-EXECUTABLE=path_alloc_test.out
+EXECUTABLE=dir_traversal.out
 
 all:$(SOURCES) $(EXECUTABLE)
 
@@ -12,3 +12,6 @@ $(EXECUTABLE):$(OBJECTS)
 
 .c.o:
 	$(CC) $(CFLAGS) $< -o $@
+	
+clean:
+	rm $(OBJECTS) $(EXECUTABLE)

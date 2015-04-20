@@ -1,5 +1,5 @@
 #include "apue.h"
-#include <error.h>
+#include <errno.h>
 #include <limits.h>
 
 #ifdef pathmax

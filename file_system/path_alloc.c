@@ -1,5 +1,4 @@
 #include "apue.h"
-#include "myerr.h"
 #include <error.h>
 #include <limits.h>
 

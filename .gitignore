@@ -6,3 +6,4 @@
 *.foo
 cmake-build-debug/
 .idea/
+*.socket
